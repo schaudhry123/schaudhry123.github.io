@@ -1,0 +1,51 @@
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Create Profile</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <h6>Roommate Preferences</h6>
+    <div>
+      <div>Would you be willing to live with a smoker? (1-No, 5-Yes)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.smoking" step="1" min="1" max="5" aria-label="smoking" class="md-primary">
+      </md-slider>
+    </div>
+    <div>
+      <div>What is your desired sleeping environment? (1-Quiet, 5-Noisy)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.environment" step="1" min="1" max="5" aria-label="environment" class="md-primary">
+      </md-slider>
+    </div>
+    <div>
+      <div>What is your cleanliness standards? (1-Clean, 5-Cluttered)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.condition" step="1" min="1" max="5" aria-label="condition" class="md-primary">
+      </md-slider>
+    </div>
+    <div>
+      <div>How do you feel about sharing your belongings? (1-Yes, 5-No)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.belongings" step="1" min="1" max="5" aria-label="belongings" class="md-primary">
+      </md-slider>
+    </div>
+    <div>
+      <div>How do you feel about guests? (1-Anytime, 5-Never)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.guests" step="1" min="1" max="5" aria-label="guests" class="md-primary">
+      </md-slider>
+    </div>
+    <div>
+      <div>What is your sleep schedule? (1-Early bird, 5-Late riser)</div>
+      <md-slider flex="" md-discrete="" ng-model="user.sleep" step="1" min="1" max="5" aria-label="sleep" class="md-primary">
+      </md-slider>
+    </div>
+    <h6>Haüs Preferences</h6>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.garden_backyard">Garden/Backyard</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.pool">Pool</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.gym">Gym</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.shopping_mall">Shopping Mall</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.beach">Beach</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.movie_theater">Movie Theater</md-checkbox>
+    <md-checkbox class="md-primary" ng-model="user.user_amenity.amusement_park">Amusement Park</md-checkbox>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="updateUser()">
+      Submit
+    </a>
+  </div>
+</div>

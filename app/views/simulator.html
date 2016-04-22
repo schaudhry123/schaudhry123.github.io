@@ -1,0 +1,123 @@
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Simulate a Game</h2>
+  </div>
+
+  <div class="mdl-card__supporting-text">
+
+    <!-- Team -->
+<!--     <md-input-container>
+      <label>Team</label>
+      <md-select ng-model="team1"
+                 md-on-close="clearSearchTerm()"
+                 class="selectdemoSelectHeader"
+                 id='selectdemoSelectHeaderId'>
+        <md-select-header class="demo-select-header">
+          <input ng-model="searchTerm"
+                 type="search"
+                 placeholder="Search for teams..."
+                 class="demo-header-searchbox _md-text">
+        </md-select-header>
+        <md-optgroup label="teams">
+          <md-option ng-repeat="team in teams | filter:searchTerm">{{team.name}}</md-option>
+        </md-optgroup>
+      </md-select>
+    </md-input-container> -->
+
+  	<!-- Team 1 -->
+    <md-input-container>
+      <label>Team 1</label>
+      <md-select ng-model="team1"
+                 md-on-close="clearSearchTerm()"
+                 class="selectdemoSelectHeader"
+                 id='selectdemoSelectHeaderId'>
+        <md-select-header class="demo-select-header">
+          <input ng-model="searchTerm1"
+                 type="search"
+                 placeholder="Search for teams..."
+                 class="demo-header-searchbox _md-text">
+        </md-select-header>
+        <md-optgroup label="teams">
+          <md-option ng-value="team" ng-repeat="team in teams | filter:searchTerm1">{{team.name}}</md-option>
+        </md-optgroup>
+      </md-select>
+    </md-input-container>
+
+		<!-- Team 2 -->
+    <md-input-container>
+      <label>Team 2</label>
+      <md-select ng-model="team2"
+                 md-on-close="clearSearchTerm()"
+                 class="selectdemoSelectHeader"
+                 id='selectdemoSelectHeaderId'>
+        <md-select-header class="demo-select-header">
+          <input ng-model="searchTerm2"
+                 type="search"
+                 placeholder="Search for teams..."
+                 class="demo-header-searchbox _md-text">
+        </md-select-header>
+        <md-optgroup label="teams">
+          <md-option ng-value="team" ng-repeat="team in teams | filter:searchTerm2">{{team.name}}</md-option>
+        </md-optgroup>
+      </md-select>
+    </md-input-container>
+
+
+
+    <!-- <md-input-container>
+      <label>Team 2</label>
+      <md-select ng-model="team2"
+                 md-on-close="clearSearchTerm()"
+                 class="selectdemoSelectHeader"
+                 id='selectdemoSelectHeaderId'>
+        <md-select-header class="demo-select-header">
+          <input ng-model="searchTerm2"
+                 type="search"
+                 placeholder="Search for teams..."
+                 class="demo-header-searchbox _md-text">
+        </md-select-header>
+        <md-optgroup label="teams">
+          <md-option ng-repeat="team in teams | filter:searchTerm2">{{team.name}}</md-option>
+        </md-optgroup>
+      </md-select>
+    </md-input-container> -->
+      <!--
+      <md-input-container>
+        <label>Players</label>
+        <md-select ng-model="players_selected" md-on-close="clearSearchTerm()" data-md-container-class="selectdemoSelectHeader" multiple>
+          <md-select-header class="demo-select-header">
+            <input ng-model="searchTerm" type="search" placeholder="Search for player" class="demo-header-searchbox _md-text" id="playersearch">
+          </md-select-header>
+          <md-optgroup label="players">
+            <md-option ng-value="player" ng-repeat="player in players | filter:searchTerm">{{player.name}}</md-option>
+          </md-optgroup>
+        </md-select>
+      </md-input-container> -->
+
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="simulate(team1, team2)">
+      Simulate
+    </a>
+ </div>
+</div>
+
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Results</h2>
+  </div>
+
+  <div class="mdl-card__supporting-text">
+    <p class="text-center" ng-hide="dataLoaded">
+      <i class="fa fa-spinner fa-spin"></i>
+    </p>
+    <div ng-show="dataLoaded">
+      {{ winning_team }} beats {{ losing_team }} by a score of {{ winning_score }} to {{ losing_score }}.
+      Goals scored by {{ winning_team }}:
+      <ul>
+        <li ng-repeat="player in winning_scoring_players">{{ player }} - {{ winning_scorers[player] }}</li>
+      </ul>
+      Goals scored by {{ losing_team }}
+      <ul>
+        <li ng-repeat="player in losing_scoring_players">{{ player }} - {{ losing_scorers[player] }}</li>
+      </ul>
+    </div>
+  </div>

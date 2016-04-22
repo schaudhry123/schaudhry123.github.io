@@ -1,0 +1,34 @@
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Edit House</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <md-input-container>
+      <label>Location</label>
+      <input ng-model="house.location">
+    </md-input-container>
+    <md-input-container>
+      <label>Cost</label>
+      <input ng-model="house.cost" type="number">
+    </md-input-container>
+    <md-input-container>
+      <label># of roommates</label>
+      <input ng-model="house.roommates" type="number">
+    </md-input-container>
+    <label>Style</label>
+    <md-select ng-model="house.style" aria-label="style">
+    	<md-option value="Art Deco">Art Deco</md-option>
+    	<md-option value="Igloo">Igloo</md-option>
+      <md-option value="Modern">Modern</md-option>
+      <md-option value="Post Modern">Post-modern</md-option>
+      <md-option value="Rustic">Rustic</md-option>
+      <md-option value="Ranch">Ranch</md-option>
+      <md-option value="Urban">Urban</md-option>
+      </md-select>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="saveHouse(house)">
+      Edit Listing
+    </a>
+  </div>
+</div>

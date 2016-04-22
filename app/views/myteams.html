@@ -1,0 +1,32 @@
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">MyTeams</h2>
+  </div>
+
+  <div class="mdl-card__supporting-text">
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" align = "center">
+		  <thead>
+		    <tr>
+		      <th class="mdl-data-table__cell--non-numeric">Team</th>
+		      <th class="mdl-data-table__cell--non-numeric">League</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr ng-repeat="team in teams | filter: user">
+		        <td class="mdl-data-table__cell--non-numeric">
+		          <a ng-href="#/teams/{{team.id}}">{{team.name}}</a>
+		        </td>
+		        <td class="mdl-data-table__cell--non-numeric">
+		          <span>{{team.league}}</span>
+		        </td>
+		    </tr>
+		  </tbody>
+		</table>
+  </div>
+
+	<div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="createteam()">
+      Create a team
+    </a>
+  </div>
+</div>

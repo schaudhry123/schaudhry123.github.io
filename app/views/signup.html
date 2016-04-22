@@ -1,0 +1,63 @@
+<div>
+  <div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Create Profile</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <md-input-container>
+        <label>Age</label>
+        <input ng-model="user.age" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Zipcode</label>
+        <input ng-model="user.zipcode" md-maxlength="5" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Gender</label>
+        <md-select ng-model="user.gender" aria-label="style" required>
+          <md-option value="Male">Male</md-option>
+          <md-option value="Female">Female</md-option>
+          <md-option value="Other">Other</md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container>
+        <label>Budget</label>
+        <input ng-model="user.budget" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label># of Roommates</label>
+        <input ng-model="user.number_of_roommates" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Style</label>
+        <md-select ng-model="user.style" aria-label="style" required>
+          <md-option value="Studio">Studio</md-option>
+          <md-option value="One Bedroom">One Bedroom</md-option>
+          <md-option value="Two Bedroom">Two Bedroom</md-option>
+          <md-option value="Three Bedroom">Three Bedroom</md-option>
+          <md-option value="Four Bedroom">Four Bedroom</md-option>
+          <md-option value="Five Bedroom">Five Bedroom</md-option>
+          <md-option value="Duplex/Triplex">Duplex/Triplex</md-option>
+          <md-option value="Condomium">Condomium</md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container>
+        <label>Location</label>
+        <input ng-model="user.location" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Length of Stay (days)</label>
+        <input ng-model="user.length_of_stay" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Company</label>
+        <input ng-model="user.company" required>
+      </md-input-container>
+    </div> 
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="updateUser()">
+        Next
+      </a>
+    </div>
+  </div>
+</div>

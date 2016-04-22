@@ -1,0 +1,25 @@
+<div class="mdl-card__title">
+  <h2 class="mdl-card__title-text">Compatible Roommates for {{$root.user.name}}</h2>
+</div>
+<md-progress-circular class="md-background centered-card" md-mode="indeterminate" ng-if="loading" md-diameter="40"></md-progress-circular>
+<div class="centered-card demo-card mdl-card mdl-shadow--2dp" ng-repeat="roommate in roommates" ng-if="!loading">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">#{{$index + 1}}: {{roommate.name}}</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <div>Age: {{roommate.age}}</div>
+    <div>Gender: {{roommate.gender}}</div>
+    <div>Location: {{roommate.location}}</div>
+    <br>
+    <div>Budget: {{roommate.budget | currency}}/month</div>
+    <div>Style: {{roommate.style}}</div>
+    <div>Number of Roommates: {{roommate.number_of_roommates}}</div>
+    <div>Length of Stay: {{roommate.length_of_stay}}</div>
+    <div>Company: {{roommate.company}}</div>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="match(roommate.id)">
+      Match
+    </a>
+  </div>
+</div>

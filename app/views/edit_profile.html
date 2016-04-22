@@ -1,0 +1,95 @@
+<div>
+  <div class="centered-card demo-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Edit Profile</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <h6>User Preferences</h6>
+      <md-input-container>
+        <label>Favorite Team</label>
+        <md-select ng-model="user.gender" aria-label="style" required>
+          <md-option value="Male">Male</md-option>
+          <md-option value="Female">Female</md-option>
+          <md-option value="Other">Other</md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container>
+        <label>Budget</label>
+        <input ng-model="user.budget" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label># of Roommates</label>
+        <input ng-model="user.number_of_roommates" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Style</label>
+        <md-select ng-model="user.style" aria-label="style" required>
+          <md-option value="Studio">Studio</md-option>
+          <md-option value="One Bedroom">One Bedroom</md-option>
+          <md-option value="Two Bedroom">Two Bedroom</md-option>
+          <md-option value="Three Bedroom">Three Bedroom</md-option>
+          <md-option value="Four Bedroom">Four Bedroom</md-option>
+          <md-option value="Five Bedroom">Five Bedroom</md-option>
+          <md-option value="Duplex/Triplex">Duplex/Triplex</md-option>
+          <md-option value="Condomium">Condomium</md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container>
+        <label>Location</label>
+        <input ng-model="user.location" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Length of Stay (days)</label>
+        <input ng-model="user.length_of_stay" type="number" min="0" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Company</label>
+        <input ng-model="user.company" required>
+      </md-input-container>
+      <h6>Roommate Preferences</h6>
+      <div>
+        <div>Would you be willing to live with a smoker? (1-No, 5-Yes)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.smoking" step="1" min="1" max="5" aria-label="smoking" class="md-primary">
+        </md-slider>
+      </div>
+      <div>
+        <div>What is your desired sleeping environment? (1-Quiet, 5-Noisy)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.environment" step="1" min="1" max="5" aria-label="environment" class="md-primary">
+        </md-slider>
+      </div>
+      <div>
+        <div>What is your cleanliness standards? (1-Clean, 5-Cluttered)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.condition" step="1" min="1" max="5" aria-label="condition" class="md-primary">
+        </md-slider>
+      </div>
+      <div>
+        <div>How do you feel about sharing your belongings? (1-Yes, 5-No)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.belongings" step="1" min="1" max="5" aria-label="belongings" class="md-primary">
+        </md-slider>
+      </div>
+      <div>
+        <div>How do you feel about guests? (1-Anytime, 5-Never)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.guests" step="1" min="1" max="5" aria-label="guests" class="md-primary">
+        </md-slider>
+      </div>
+      <div>
+        <div>What is your sleep schedule? (1-Early bird, 5-Late riser)</div>
+        <md-slider flex="" md-discrete="" ng-model="user.sleep" step="1" min="1" max="5" aria-label="sleep" class="md-primary">
+        </md-slider>
+      </div>
+      <h6>Haüs Preferences</h6>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.garden_backyard">Garden/Backyard</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.pool">Pool</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.gym">Gym</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.shopping_mall">Shopping Mall</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.beach">Beach</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.movie_theater">Movie Theater</md-checkbox>
+      <md-checkbox class="md-primary" ng-model="user.user_amenity.amusement_park">Amusement Park</md-checkbox>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" ng-click="updateUser()">
+        Submit
+      </a>
+    </div>
+  </div>
+</div>
