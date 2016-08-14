@@ -1,6 +1,7 @@
 body {
 	/*font-family: 'Lato', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
+    margin-top: 120px;
 }
 
 .subtext-header {
@@ -8,19 +9,40 @@ body {
 	font-size: 16px;
 }
 
-.navbar-header .navbar-textJK {
-	color: #6AC4BC;
-}
-
-.bs-docs-footer {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-top: 100px;
-	color: #99979c;
-	text-align: center;
-	/*background-color: #2a2730;*/
-}
-
 .no-link-color {
     color: inherit;
+}
+
+#header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+}
+
+.page-header {
+    transition: all 0.4s ease;
+    margin: 20px 0 0px;
+}
+.page-header h4 {
+    margin-top: 35px;
+}
+
+.page-header.sticky {
+    transition: all 0.4s ease;
+    margin: 0;
+}
+
+#portrait-img {
+    width: 50%;
+}
+
+.section-header {
+    margin: 1em 0;
+}
+
+/* Give space at bottom of page */
+#contact {
+    margin-bottom: 50px;
 }
