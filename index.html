@@ -9,6 +9,7 @@
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 		<link type="text/css" rel="stylesheet" href="css/app.css"/>
     <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link type="text/css" rel="stylesheet" href="css/toastr.min.css"/>
 
 		<!-- Let browser know website is optimized for mobile -->
 		<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
@@ -47,7 +48,7 @@
       <section id="about">
         <div class="container text-center">
           <h2 class="section-header">About</h2>
-  			  <p>Redeveloping website, coming soon!</p>
+  			  <p>Coming soon!</p>
         </div>
       </section>
 
@@ -95,8 +96,14 @@
 			</section>
 		</div>
 
-		<!-- Import jQuery before materialize.js -->
-		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+    <!-- Create div for notifications -->
+    <div id="ohsnap"></div>
+
+    <section id="scripts">
+  		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+      <script type="text/javascript" src="js/toastr.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    </section>
+
 	</body>
 </html>

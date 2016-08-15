@@ -24,3 +24,11 @@ $("#projects-link").click(function() {
 $("#contact-link").click(function() {
     scrollToAnchor('contact')
 });
+
+// Toastr notification options
+toastr.options = {
+    "closeButton": true,
+    "onclick": null,
+    "positionClass": "toast-bottom-right"
+}
+toastr.info('Website is a work in progress! The rest is coming soon!');
