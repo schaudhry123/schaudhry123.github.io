@@ -1,6 +1,6 @@
 // Header function to add/remove sticky class when scrolling
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 1) {
+    if ($(this).scrollTop() > 50) {
         $('.page-header').addClass("sticky");
     }
     else {
