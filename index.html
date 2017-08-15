@@ -6,95 +6,203 @@
 		<!-- Font Awesome -->
 		<link type="text/css" rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
-		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="css/app.css"/>
     <link type="text/css" rel="stylesheet" href="css/animate.css"/>
     <link type="text/css" rel="stylesheet" href="css/toastr.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/app.css"/>
 
 		<!-- Let browser know website is optimized for mobile -->
 		<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
 	</head>
 
 	<body>
-		<div class="container-fluid">
-      <section id="header">
-        <div class="page-header">
-          <div class="row container-fluid">
-            <div class="col-lg-6">
-              <h1><img id="nav-logo" src="resources/imgs/Logo.png" height="50" width="100">&nbsp Samir Chaudhry <small class="subtext-header">Junior in CS @ UIUC</small></h1>
-            </div>
-            <div class="col-lg-1 col-lg-offset-2">
-              <h4><a id="about-link" href="#">About</a></h4>
-            </div>
-            <div class="col-lg-1">
-              <h4><a id="projects-link" href="#">Projects</a></h4>
-            </div>
-            <div class="col-lg-1">
-              <h4><a id="contact-link" href="#">Contact</a></h4>
-            </div>
-            <div class="col-lg-1">
-              <h4><a id="labs-link" href="#">Lab</a></h4>
-            </div>
+    <section id="start">
+    </section>
+
+    <section id="header">
+      <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#" id="home-link">Samir Chaudhry</a>
+        <ul class="nav navbar-nav pull-right nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="about-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="projects-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contact-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="lab-link">Lab</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <div class="page-header">
+        <div class="row container-fluid">
+          <div class="col-lg-6">
+            <h1><img id="nav-logo" src="resources/imgs/Logo.png" height="50" width="100">&nbsp Samir Chaudhry <small class="subtext-header">Junior in CS @ UIUC</small></h1>
+          </div>
+          <div class="col-lg-1 col-lg-offset-2">
+            <h4><a id="about-link" href="#">About</a></h4>
+          </div>
+          <div class="col-lg-1">
+            <h4><a id="projects-link" href="#">Projects</a></h4>
+          </div>
+          <div class="col-lg-1">
+            <h4><a id="contact-link" href="#">Contact</a></h4>
+          </div>
+          <div class="col-lg-1">
+            <h4><a id="labs-link" href="#">Lab</a></h4>
           </div>
         </div>
-      </section>
+      </div> -->
+    </section>
 
-      <section id="portrait">
-        <div class="container text-center">
-          <img id="portrait-img" src="resources/imgs/IMG_0328.jpg">
-        </div>
-      </section>
+    <section id="portrait">
+      <div class="container text-xs-center">
+        <img id="portrait-img" class="img-fluid" src="resources/imgs/IMG_0328.jpg">
+      </div>
+    </section>
 
-      <section id="about">
-        <div class="container text-center">
-          <h2 class="section-header">About</h2>
-  			  <p>Coming soon!</p>
-        </div>
-      </section>
+    <section id="about">
+      <div class="container text-xs-center">
+        <h2 class="section-header">About</h2>
+			  <p>Senior at the University of Illinois</p>
+        <p>M.S. in Computer Science 2018, M.S. in Computer Science 2018</p>
+        <p>Fun facts about me ATL, Workouts, and shat</p>
+      </div>
+    </section>
 
-      <section id="projects">
-        <div class="container text-center">
-          <h2 class="section-header">Projects</h2>
-          <p>Will add soon!</p>
-        </div>
-      </section>
+    <section id="projects">
+      <div class="container text-xs-center">
+        <h2 class="section-header">Projects</h2>
+        <div class="row">
 
-			<section id="contact">
-        <div class="container text-center">
-          <h2 class="section-header">Contact</h2>
-          <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
-              <i class="fa fa-phone fa-3x animated bounceIn"></i>
-              <p>(678) 431 1643</p>
+          <div class="col-lg-4 offset-lg-1">
+
+            <div class="card text-xs-left">
+              <img class="card-img-top img-fluid add-gray-border" src="resources/imgs/blue_jay_prep.png" alt="Blue Jay Prep Preview">
+              <div class="card-block">
+                <h4 class="card-title">Blue Jay Prep</h4>
+                <hr />
+                <p class="card-text">Interactive learning with personalized feedback for the new SAT Math</p>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <a href="mailto:schaudhry123@gmail.com" class="no-link-color">
-                <i class="fa fa-envelope-o fa-3x animated bounceIn"></i>
-                <p>Email</p>
-              </a>
+
+            <div class="card text-xs-left">
+              <div class="card-block">
+                <h4 class="card-title">Chord System</h4>
+                <hr />
+                <p class="card-text">Distributed key-value storage system using a chord design</p>
+                <p>Built in Python</p>
+                <a class="card-link" href="https://github.com/schaudhry123/Distributed-Key-Value-Store-Consistency">Github</a>
+              </div>
             </div>
-            <div class="col-lg-2">
-              <a href="http://www.github.com/schaudhry123" class="no-link-color">
-                <i class="fa fa-github fa-3x animated bounceIn" data-delay=".2s"></i>
-                <p>Github</p>
-              </a>
-            </div>
-            <div class="col-lg-2">
-              <a href="http://www.linkedin.com/in/samirchaudhry" class="no-link-color">
-                <i class="fa fa-linkedin-square fa-3x animated bounceIn" data-wow-delay=".2s"></i>
-                <p>LinkedIn</p>
-              </a>
-            </div>
-            <div class="col-lg-2">
-              <a href="https://www.dropbox.com/s/k978nbm8tcgmi7z/SamirChaudhry-Resume.pdf?dl=0" class="no-link-color">
-                <i class="fa fa-file-text fa-3x animated bounceIn" data-wow-delay=".2s"></i>
-                <p>Resume</p>
-              </a>
+
+          </div>
+
+          <div class="col-lg-4 offset-lg-2">
+            <div class="card text-xs-left">
+              <img class="card-img-top img-fluid add-gray-border" src="resources/imgs/ultimate_team.gif" alt="UltimateTeam Preview">
+              <div class="card-block">
+                <h4 class="card-title">UltimateTeam</h4>
+                <hr />
+                <p class="card-text">Soccer database of players and teams including a simulator + build your own team</p>
+                <p>Built using Django Rest Framework and AngularJS</p>
+                <a class="card-link" href="https://github.com/schaudhry123/UltimateTeam">Github</a>
+              </div>
             </div>
           </div>
+
+
         </div>
-			</section>
-		</div>
+      </div>
+    </section>
+
+    <section id="lab">
+      <div class="container text-xs-center">
+        <h2 class="section-header">Lab</h2>
+        <div class="row">
+          <div class="col-lg-4 offset-lg-1">
+
+            <div class="card text-xs-left">
+              <img class="card-img-top img-fluid" src="resources/imgs/chess_set.jpg" alt="Chess Image">
+              <div class="card-block">
+                <h4 class="card-title">Chess</h4>
+                <hr />
+                <p class="card-text">2 Player Chess Game</p>
+                <p>Built using Java and Java Swing</p>
+                <a class="card-link" href="https://github.com/schaudhry123/Chess">Github</a>
+              </div>
+            </div>
+
+            <div class="card text-xs-left">
+              <div class="card-block">
+                <h4 class="card-title">SVN Portfolio</h4>
+                <hr />
+                <p class="card-text">SVN Portfolio of all school projects worked on in classes at the University of Illinois</p>
+                <p>Built using Flask and Material Design</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 offset-lg-2">
+
+            <div class="card text-xs-left">
+              <div class="card-block">
+                <h4 class="card-title">FitCity</h4>
+                <hr />
+                <p class="card-text">Exercise database with the ability to create user-specific workouts and view all other users' workouts</p>
+                <p>Built using ReactJS and Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+        </div>
+      </div>
+    </section>
+
+		<section id="contact">
+      <div class="container text-xs-center">
+        <h2 class="section-header">Contact</h2>
+        <div class="row">
+          <div class="col-lg-2 offset-lg-1">
+            <i class="fa fa-phone fa-3x animated bounceIn"></i>
+            <p>(678) 431 1643</p>
+          </div>
+          <div class="col-lg-2">
+            <a href="mailto:schaudhry123@gmail.com" class="no-link-color">
+              <i class="fa fa-envelope-o fa-3x animated bounceIn"></i>
+              <p>Email</p>
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.github.com/schaudhry123" class="no-link-color">
+              <i class="fa fa-github fa-3x animated bounceIn" data-delay=".2s"></i>
+              <p>Github</p>
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="http://www.linkedin.com/in/samirchaudhry" class="no-link-color">
+              <i class="fa fa-linkedin-square fa-3x animated bounceIn" data-wow-delay=".2s"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="https://www.dropbox.com/s/8ms3q8unm67exdw/SamirChaudhry-Resume.pdf?dl=0" class="no-link-color">
+              <i class="fa fa-file-text fa-3x animated bounceIn" data-wow-delay=".2s"></i>
+              <p>Resume</p>
+            </a>
+          </div>
+        </div>
+      </div>
+		</section>
+
 
     <!-- Create div for notifications -->
     <div id="ohsnap"></div>
@@ -105,5 +213,5 @@
       <script type="text/javascript" src="js/app.js"></script>
     </section>
 
-	</body>
+  </body>
 </html>

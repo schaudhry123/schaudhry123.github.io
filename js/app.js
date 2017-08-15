@@ -15,6 +15,9 @@ function scrollToAnchor(id) {
 }
 
 // Enable smooth scrolling for links
+$("#home-link").click(function() {
+    scrollToAnchor('start')
+});
 $("#about-link").click(function() {
     scrollToAnchor('about')
 });
@@ -23,6 +26,9 @@ $("#projects-link").click(function() {
 });
 $("#contact-link").click(function() {
     scrollToAnchor('contact')
+});
+$("#lab-link").click(function() {
+    scrollToAnchor('lab')
 });
 
 // Toastr notification options

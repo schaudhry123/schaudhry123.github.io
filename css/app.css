@@ -73,3 +73,17 @@ body {
     transition: all 0.4s ease;
     width: 75%;
 }
+
+/* Nav bar */
+.navbar {
+    background-color: #f7f7f9;
+}
+
+.nav-links {
+    margin-right: 30px;
+}
+
+/* Cards */
+.card-title {
+    font-weight: 1.7rem ;
+}
