@@ -56,7 +56,7 @@ body {
 }
 
 #portrait-img {
-    width: 50%;
+    max-width: 300px;
 }
 
 .section-header {
